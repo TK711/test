@@ -27,8 +27,12 @@ def on_startup():
 
 @app.get("/")
 def hello():
-    return "Hello, Docker!"
+    return "why, Docker?"
 
+
+@app.get("/tst/")
+def hello():
+    return "test"
 
 @app.post("/heroes/")
 def create_hero(hero: Hero):
